@@ -25,7 +25,7 @@ export class SignUser {
 		if (user) {
 			return {
 				success: false,
-				message: 'User already exists',
+				message: 'Usuário já existe',
 			};
 		}
 		const salt = bcrypt.genSaltSync(10);
@@ -38,7 +38,7 @@ export class SignUser {
 
 		return {
 			success: true,
-			message: 'User created successfully',
+			message: 'Usuário criado com sucesso',
 			newUser,
 		};
 	}

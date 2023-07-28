@@ -24,7 +24,7 @@ export class Login {
 		if (!user) {
 			return {
 				success: false,
-				message: 'User not found',
+				message: 'Usuário não encontrado',
 			};
 		}
 
@@ -32,7 +32,7 @@ export class Login {
 		if (!isPasswordCorrect) {
 			return {
 				success: false,
-				message: 'Wrong password',
+				message: 'Senha está errda',
 			};
 		}
 
